@@ -1,0 +1,59 @@
+{
+  "hello": "Hello",
+  "select": "Choose a language",
+  "buttons": {
+    "search": "Search",
+    "logout": "Logout",
+    "add": "Add a contact",
+    "filter": "Filter",
+    "back_list": "Back to the list",
+    "save": "Save"
+  },
+  "sidebar": {
+    "dash": "Dashboard",
+    "other_filter": "Other filters"
+  },
+  "breadcrump": {
+    "home": "Home",
+    "form": "Form",
+    "data": "Data"
+  },
+  "titles": {
+    "company": "Company name",
+    "dash": "Dashboard",
+    "list": "Contact list"
+  },
+  "liste": {
+    "id": "ID",
+    "name": "Name",
+    "username": "Username",
+    "email": "Email",
+    "phone": "Phone",
+    "action": "Actions"
+  },
+  "form": {
+    "name": "Name",
+    "username": "Username",
+    "email": "Email",
+    "phone": "Phone",
+    "web": "Website",
+    "adr": {
+      "address": "Address",
+      "street": "Street",
+      "suite": "Suite",
+      "city": "City",
+      "zipcode": "Zipcode"
+    },
+    "gps": {
+      "geo": "GEO",
+      "lat": "lat",
+      "lng": "lng"
+    },
+    "cpn": {
+      "company": "Company",
+      "name": "Name",
+      "catch": "CatchPhrase",
+      "bs": "BS"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+1 -+ créer trois composants header, sidebar et dashboard avec des contenus statiques
+2 -+ créer les interfaces contact et les autres 
+3 -+ remplacer la liste contact qui represent la partie statique courante par le composant contact
+4 -+ créer un filter sur la liste à partir de l'input search du header
+5 -+ créer formulaire d'ajout d'un nouveau contact 
+6 -+ créer formulaire de modification 
+7 -+ ajouter deux boutons ( modification / suppression ) pour chaque composant contact dans la liste
+8 - créer le composant breadcrumb avec des lien navigables
+9 -+ créer un routing pour l'application avec un lazy-loading
+10 -+ créer un composant login qui va être ajouter au route avec /login
+11 -+ créer deux bouton de connexion pour se connecter directement (user et admin)
+12 -+ créer un service qui va stocker un objet profile avec les données suivants {nom , type} 
+13 -+ ajouter un service injectable pour le rendre disponible partout dans l'application et y stocker les contacts
+14 - 
+15 - 
+16 - 
+17 - 
+18 - 
+19 - 
+20 - 
+21 - 

@@ -1,0 +1,59 @@
+{
+  "hello": "Bonjour",
+  "select": "Choisissez une langue",
+  "buttons": {
+    "search": "Rechercher",
+    "logout": "Déconnexion",
+    "add": "Ajouter un contact",
+    "filter": "Filtre",
+    "back_list": "Retour à la liste",
+    "save": "Enregistrer"
+  },
+  "sidebar": {
+    "dash": "Tableau de bord",
+    "other_filter": "Autre filtres"
+  },
+  "breadcrump": {
+    "home": "Accueil",
+    "form": "Formulaire",
+    "data": "Données"
+  },
+  "titles": {
+    "company": "Nom d'entreprise",
+    "dash": "Tableau de bord",
+    "list": "Liste des contact"
+  },
+  "liste": {
+    "id": "ID",
+    "name": "Nom",
+    "username": "Nom d'utilisateur",
+    "email": "Email",
+    "phone": "Téléphone",
+    "action": "Actions"
+  },
+  "form": {
+    "name": "Nom",
+    "username": "Nom d'utilisateur",
+    "email": "Email",
+    "phone": "Téléphone",
+    "web": "Site web",
+    "adr": {
+      "address": "Adresse",
+      "street": "Rue",
+      "suite": "Suite",
+      "city": "Ville",
+      "zipcode": "Code postal"
+    },
+    "gps": {
+      "geo": "GEO",
+      "lat": "lat",
+      "lng": "lng"
+    },
+    "cpn": {
+      "company": "Entreprise",
+      "name": "Nom",
+      "catch": "Slogan",
+      "bs": "BS"
+    }
+  }
+}

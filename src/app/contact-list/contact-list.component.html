@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">{{ 'titles.dash' | translate }}</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <button type="button" class="btn btn-sm btn-outline-secondary">{{ 'buttons.filter' | translate }} 1</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">{{ 'buttons.filter' | translate }} 2</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>{{ 'titles.list' | translate }}</h2>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <a [routerLink]="['add-contact']" class="btn btn-sm btn-outline-success">
+                <fa-icon [icon]="['fas', 'plus']"></fa-icon> {{ 'buttons.add' | translate }}
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="table-responsive">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <th>{{ 'liste.id' | translate }}</th>
+                <th>{{ 'liste.name' | translate }}</th>
+                <th>{{ 'liste.username' | translate }}</th>
+                <th>{{ 'liste.email' | translate }}</th>
+                <th>{{ 'liste.phone' | translate }}</th>
+                <th>{{ 'liste.action' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let contact of contacts; let i = index">
+                <td>{{ contact.id }}</td>
+                <td>{{ contact.name }}</td>
+                <td>{{ contact.username }}</td>
+                <td>{{ contact.email }}</td>
+                <td>{{ contact.phone }}</td>
+                <td class="btn-actions">
+                  <a [routerLink]="['edit-contact', contact.id]" class="btn btn-outline-primary"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
+                  <button (click)='deleteUser(contact.id)' class="btn btn-outline-danger"><fa-icon [icon]="['fas', 'trash-alt']"></fa-icon></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>

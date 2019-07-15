@@ -1,0 +1,79 @@
+
+  <form class="form-contact" novalidate="">
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="name">{{ 'form.name' | translate }}:</label>
+        <input id="name" type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="userName">{{ 'form.username' | translate }}:</label>
+        <input id="userName" type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="email">{{ 'form.email' | translate }}:</label>
+        <input id="email" type="email" class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="phone">{{ 'form.phone' | translate }}:</label>
+        <input id="phone" type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="website">{{ 'form.web' | translate }}:</label>
+        <input id="website" type="text" class="form-control">
+      </div>
+    </div>
+    <h3>{{ 'form.adr.address' | translate }}</h3><hr>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="street">{{ 'form.adr.street' | translate }}:</label>
+        <input id="street" type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="suite">{{ 'form.adr.suite' | translate }}:</label>
+        <input id="suite" type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="city">{{ 'form.adr.city' | translate }}:</label>
+        <input id="city" type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="zipcode">{{ 'form.adr.zipcode' | translate }}:</label>
+        <input id="zipcode" type="text" class="form-control">
+      </div>
+    </div>
+    <h3>{{ 'form.gps.geo' | translate }}</h3><hr>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="lat">{{ 'form.gps.lat' | translate }}:</label>
+        <input id="lat" type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="lng">{{ 'form.gps.lng' | translate }}:</label>
+        <input id="lng" type="text" class="form-control">
+      </div>
+    </div>
+    <h3>{{ 'form.cpn.company' | translate }}</h3><hr>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="name">{{ 'form.cpn.name' | translate }}:</label>
+        <input id="name" type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="catchPhrase">{{ 'form.cpn.catch' | translate }}:</label>
+        <input id="catchPhrase" type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="bs">{{ 'form.cpn.bs' | translate }}:</label>
+        <input id="bs" type="text" class="form-control">
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <a [routerLink]="['/home']" class="btn btn-secondary float-left">
+          <fa-icon [icon]="['fas', 'chevron-left']"></fa-icon> {{ 'buttons.back_list' | translate }}
+        </a>
+        <button class="btn btn-success float-right">{{ 'buttons.save' | translate }}</button>
+      </div>
+    </div>
+  </form>

@@ -1,0 +1,25 @@
+<app-header (searchEmit)='emitSearch($event)'></app-header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-md-9 col-lg-10">
+      <main role="main" class="ml-sm-auto px-4">
+        <h5 class="pt-4">{{ 'hello' | translate }}</h5>
+        <div class="pt-4">
+          {{ 'select' | translate }}: 
+        <select #langSelect (change)="translate.use(langSelect.value)">
+          <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">
+            {{ lang }}
+          </option>
+        </select>
+        </div>
+        <app-breadcrumb></app-breadcrumb>
+        
+        <router-outlet></router-outlet>
+
+      </main>
+    </div>
+  </div>
+</div> 
